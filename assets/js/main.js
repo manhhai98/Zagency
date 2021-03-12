@@ -11,31 +11,7 @@ $(document).ready(function() {
         header.classList.toggle('sticky', window.scrollY > 0);
     });
 
-    // Active Menu
-    function functionScroll() {
-        var section = document.querySelectorAll(".section"),
-        sections = {},
-        i = 0;
-        
-        Array.prototype.forEach.call(section, function (e) {
-        sections[e.id] = e.offsetTop;
-        });
-        
-        for (i in sections) {
-            if (sections[i] <= window.pageYOffset + 64 ) {
-                const active = document.querySelector(".active");
-                if(active){
-                    active.classList.remove("active");
-                }
-                
-                if(document.querySelector("a[href*='" + i + "']")){
-                    document.querySelector("a[href*='" + i + "']").classList.add("active");
-                }
-            }
-        }
-    }
-        
-    window.addEventListener("scroll", functionScroll);
+    
 
 
     //Show Menu Dropdown
