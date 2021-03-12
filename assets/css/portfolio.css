@@ -1,0 +1,527 @@
+/*
+Author: Manh Hai
+Theme: Zagency
+Description: Portfolio Style CSS
+Version: 1.0.0
+*/
+/*========================Table of Content========================
+1. Reset CSS
+2. Header
+3. Banner
+4. Project
+5. Footer*/
+
+/*========================1. Reset CSS========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #464646;
+}
+
+html{
+    font-size: 95,75%;
+    scroll-behavior: smooth;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+#myTab,
+#all-tab, 
+#websites-tab,
+#designs-tab,
+#social-tab{
+    border: none;
+}
+
+#all-tab.active, 
+#websites-tab.active,
+#designs-tab.active,
+#social-tab.active{
+    background-color: transparent;
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(-45deg); 
+    }
+
+    50%{
+        transform: translateY(15px);
+        border-bottom-right-radius: 25px;
+    }
+
+    100%{
+        transform: translateY(0px);
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes shadow{
+    0%,100%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+}
+
+/*========================2. Header========================*/
+.wrapper{
+    overflow: hidden;
+}
+
+.wrapper .header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.wrapper .header .header__loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.wrapper .header .header__loader .header__loader-box{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
+.wrapper .header .header__loader .header__loader-box::after{
+    background: linear-gradient(to right bottom, #0f97d5, #39459b);
+    content: '';
+    width: 50px;
+    height: 50px;
+    animation: animate .5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.wrapper .header .header__loader .header__loader-box::before{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #000;
+    opacity: 0.1;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow .5s linear infinite;
+}
+
+.wrapper .header .header__wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px 30px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav {
+    display: flex;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__item .nav__item-link{
+    color: rgba(0,0,0,.5);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__item .nav__item-link.active{
+    color: #000;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__item .nav__item-link:hover{
+    color: rgba(0,0,0,.9);
+    transition: 0.3s;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__pages{
+    position: relative;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__pages .nav__pages-dropdown{
+    position: absolute;
+    top: 100%;
+    padding: 1rem;
+    text-align: center;
+    left: -50%;
+    min-width: 150px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px; 
+    display: none; 
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__pages .nav__pages-dropdown .dropdown__item {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__pages .nav__pages-dropdown .dropdown__item 
+.dropdown__item-link{
+    color: rgba(0,0,0,.5);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: block;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__pages .nav__pages-dropdown .dropdown__item
+.dropdown__item-link:hover{
+    color: rgba(0,0,0,.9);
+    transition: 0.3s;
+}
+
+.wrapper .header .header__wrap .header__wrap-nav .nav__pages:hover .nav__pages-dropdown{
+    display: block;
+}
+
+.wrapper .header .header__wrap .header__wrap-btn{
+    color: rgba(0,0,0,.5);
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border-color: rgba(0,0,0,.1);
+    line-height: 1;
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown{
+    flex-basis: 100%;
+    padding-top: 2rem;
+    overflow-y: auto;
+    transition: 0.4s;
+    display: none;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__item .dropdown__item-link,
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__pages .dropdown__pages-items 
+.items__item-link{
+    color: rgba(0,0,0,.5);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: block;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__item .dropdown__item-link:hover{
+    color: rgba(0,0,0,.9);
+    transition: 0.3s;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__item .dropdown__item-link.active{
+    color: #000;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__pages .dropdown__pages-items{
+    padding: 15px;
+    display: none;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__pages:hover .dropdown__pages-items{
+    display: block;
+}
+
+.wrapper .header .header__wrap .header__wrap-dropdown .dropdown__pages .dropdown__pages-items 
+.items__item-link:hover{
+    color: rgba(0,0,0,.9);
+    transition: 0.3s;
+}
+
+/*========================3. Banner========================*/
+.wrapper .banner{
+    height: 400px;
+    background: url(../images/top_img.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper .banner::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0));
+}
+
+.wrapper .banner .banner__content{
+    position: relative;
+    z-index: 9998;
+}
+
+.wrapper .banner .banner__content h1{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper .banner .banner__content .banner__content-list{
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .banner .banner__content .banner__content-list .list__item .list__item-link{
+    color: #464646;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.wrapper .banner .banner__content .banner__content-list .list__item .list__item-link.active{
+    color: #868e96;
+    cursor: auto;
+}
+
+.wrapper .banner .banner__content .banner__content-list .active::before{
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #868e96;
+    content: "/";
+}
+
+/*========================4. Project========================*/
+.wrapper .project{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.wrapper .project .project__content .project__content-toolbar{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #f9f9f9;
+    border-radius: 25px;
+    width: auto;
+    border: 2px solid #eee;
+}
+
+.wrapper .project .project__content .project__content-toolbar .toolbar__item{
+    display: inline-block; 
+    margin: 0;
+    font-size: 1.3rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+.wrapper .project .project__content .project__content-toolbar .toolbar__item .toolbar__item-link{
+    display: block;
+    padding: .5rem 1rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.wrapper .project .project__content .project__content-toolbar .toolbar__item .toolbar__item-link:hover,
+.wrapper .project .project__content .project__content-toolbar .toolbar__item .active{
+   color: #39459b;
+   transition: 0.3s;
+}
+
+.wrapper .project .project__content .project__content-items{
+    margin-top: 2rem;
+
+}
+
+.wrapper .project .project__content .project__content-items .items__item{
+    margin-top: 2rem;
+    transform: scale(1, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .project .project__content .project__content-items .items__item .items__item-image{
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.wrapper .project .project__content .project__content-items .items__item .items__item-image img{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.wrapper .project .project__content .project__content-items .items__item:hover .items__item-image img{
+    transform: scale(1.1, 1.1);
+    filter: blur(2px);
+}
+
+.wrapper .project .project__content .project__content-items .items__item .items__item-content{
+    background: #f9f9f9;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+.wrapper .project .project__content .project__content-items .items__item .items__item-content h3{
+    margin: 0px;
+    padding: 1rem;
+    color: #464646;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.wrapper .project .project__content .project__content-btn{
+    margin-top: 4rem;
+}
+
+.wrapper .project .project__content .project__content-btn .btn__more{
+    padding: .7rem 1.5rem;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+    background: linear-gradient(to right bottom, #0f97d5, #39459b);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.wrapper .project .project__content .project__content-btn .btn__more:hover{
+    box-shadow: 0 15px 15px -11px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -0.5rem);
+}
+
+/*========================5. Footer========================*/
+.wrapper .footer{
+    padding: 1rem 0;
+    background: linear-gradient(to right bottom, #39459b, #0f97d5);
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper .footer .footer__content p{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 991px){
+    .wrapper .header .header__wrap .header__wrap-nav{
+        display: none;
+    }
+
+    .wrapper .header .header__wrap .header__wrap-btn{
+        display: block;
+    }   
+}
+
+@media only screen and (max-width: 767px){
+    .wrapper .banner{
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .wrapper .banner .banner__content h1{
+        font-size: 1.4rem;
+    }
+
+    .wrapper .footer .footer__content p{
+        font-size: 12px;
+    }
+
+    .wrapper .project .project__content .project__content-toolbar .toolbar__item{
+        font-size: 0.7rem;
+    }
+
+    .wrapper .project .project__content .project__content-btn{
+        margin-top: 2rem;
+    }
+
+    .wrapper .project .project__content .project__content-btn .btn__more{
+        font-size: 10px;
+    }
+
+    .wrapper .project .project__content .project__content-items .items__item .items__item-content h3{
+        font-size: 1rem;
+    }
+}

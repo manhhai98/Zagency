@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zagency</title>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Fancy Box CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Start Header -->
+        <div id="header" class="header">
+            <div class="container">
+                <div class="header__loader">
+                    <div class="header__loader-box"></div>
+                </div>
+
+                <div id="header__wrap" class="header__wrap">
+                    <a class="header__wrap-logo">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+
+                    <ul class="header__wrap-nav">
+                        <li class="nav__item"><a href="#banner" class="nav__item-link active">home</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__item-link">services</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__item-link">portfolio</a></li>
+                        <li class="nav__item"><a href="#testimonial" class="nav__item-link">testimonial</a></li>
+                        <li class="nav__item"><a href="#team" class="nav__item-link">team</a></li>
+                        <li class="nav__item"><a href="#pricing" class="nav__item-link">pricing</a></li>
+                        <li class="nav__item"><a href="#news" class="nav__item-link">news</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__item-link">contact us</a></li>
+                        <li class="nav__item nav__pages">
+                            <a class="nav__item-link lowercase text-lowercase">
+                                pages<i class="fas fa-caret-down"></i>
+                            </a>
+
+                            <ul class="nav__pages-dropdown">
+                                <li class="dropdown__item">
+                                    <a href="about.html" class="dropdown__item-link">about us</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="blogs.html" class="dropdown__item-link">blogs</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="single-blog.html" class="dropdown__item-link">single blogs</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="portfolio.html" class="dropdown__item-link">portfolio</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a class="header__wrap-btn">
+                        <i id="bars" class="fas fa-bars"></i>
+                    </a>
+
+                    <ul class="header__wrap-dropdown">
+                        <li class="dropdown__item"><a href="#banner" class="dropdown__item-link active">home</a></li>
+                        <li class="dropdown__item"><a href="#services" class="dropdown__item-link">services</a></li>
+                        <li class="dropdown__item"><a href="#portfolio" class="dropdown__item-link">portfolio</a></li>
+                        <li class="dropdown__item"><a href="#testimonial" class="dropdown__item-link">testimonial</a></li>
+                        <li class="dropdown__item"><a href="#team" class="dropdown__item-link">team</a></li>
+                        <li class="dropdown__item"><a href="#pricing" class="dropdown__item-link">pricing</a></li>
+                        <li class="dropdown__item"><a href="#news" class="dropdown__item-link">news</a></li>
+                        <li class="dropdown__item"><a href="#contact" class="dropdown__item-link">contact us</a></li>
+                        <li class="dropdown__item dropdown__pages">
+                            <a class="dropdown__item-link text-lowercase">
+                                pages<i class="fas fa-caret-down"></i>
+                            </a>
+
+                            <ul class="dropdown__pages-items">
+                                <li class="items__item">
+                                    <a href="about.html" class="items__item-link">about us</a>
+                                </li>
+                                <li class="items__item">
+                                    <a href="blogs.html" class="items__item-link">blogs</a>
+                                </li>
+                                <li class="items__item">
+                                    <a href="single-blog.html" class="items__item-link">single blogs</a>
+                                </li>
+                                <li class="items__item">
+                                    <a href="portfolio.html" class="items__item-link">portfolio</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+
+        <!-- Start Banner -->
+        <div id="banner" class="banner section">
+            <div class="container">
+                <div class="row banner__content">
+                    <div class="col-lg-6 col-md-12 banner__content-left">
+                        <div class="left__text">
+                            <h1>
+                            start your business with zagency
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInDown animate__slow">Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s</p>
+                        </div>
+
+                        <div class="left__form wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                            <input type="email" name="EMAIl" placeholder="Enter Your Email">
+                            <a class="left__form-btn">subcribe</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 banner__content-right wow animate__animated animate__fadeInUp" data-wow-delay="2s">
+                        <img src="assets/images/top_img.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+
+        <!-- Start Service -->
+        <div id="services" class="service section">
+            <div class="container">
+                <div class="service__content">
+                    <div class="service__content-headings">
+                        <h1>our service</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit 
+                            ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+
+                    <div class="row service__content-items">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="items__item wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                                <svg aria-hidden="true" data-prefix="far" data-icon="object-group" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M500 128c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12h-72c-6.627 0-12 5.373-12 12v12H96V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v72c0 6.627 5.373 12 12 12h12v256H12c-6.627 0-12 5.373-12 12v72c0 6.627 5.373 12 12 12h72c6.627 0 12-5.373 12-12v-12h320v12c0 6.627 5.373 12 12 12h72c6.627 0 12-5.373 12-12v-72c0-6.627-5.373-12-12-12h-12V128h12zm-52-64h32v32h-32V64zM32 64h32v32H32V64zm32 384H32v-32h32v32zm416 0h-32v-32h32v32zm-40-64h-12c-6.627 0-12 5.373-12 12v12H96v-12c0-6.627-5.373-12-12-12H72V128h12c6.627 0 12-5.373 12-12v-12h320v12c0 6.627 5.373 12 12 12h12v256zm-36-192h-84v-52c0-6.628-5.373-12-12-12H108c-6.627 0-12 5.372-12 12v168c0 6.628 5.373 12 12 12h84v52c0 6.628 5.373 12 12 12h200c6.627 0 12-5.372 12-12V204c0-6.628-5.373-12-12-12zm-268-24h144v112H136V168zm240 176H232v-24h76c6.627 0 12-5.372 12-12v-76h56v112z"></path>
+                                </svg>
+                                <h2>design</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod 
+                                    tempor enim minim veniam quis notru</p>
+
+                                <div class="items__item-hover"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="items__item wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
+                                <svg class="blue" aria-hidden="true" data-prefix="fas" data-icon="laptop-code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path>
+                                </svg>
+                                <h2>development</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod 
+                                    tempor enim minim veniam quis notru</p>
+
+                                <div class="items__item-hover"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="items__item wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
+                                <svg aria-hidden="true" data-prefix="far" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"></path>
+                                </svg>
+                                <h2>social media</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod 
+                                    tempor enim minim veniam quis notru</p>
+
+                                <div class="items__item-hover"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Service -->
+
+        <!-- Start About Us -->
+        <div class="about section">
+            <div class="container">
+                <div class="row about__content">
+                    <div class="col-md-12 col-lg-6 about__content-left wow animate__animated animate__fadeInLeft animate__slower">
+                        <img src="assets/images/about-us.jpg" alt="image">
+
+                        <a class="left__play" data-fancybox="video" href="https://youtu.be/tiy1MeXzhfA">
+                            <svg aria-hidden="true" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-lg-6 about__content-right wow animate__animated animate__fadeInRight animate__slower">
+                        <h2>what we do?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor 
+                            enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam 
+                            quis notru exercit.</p>
+                        <ul class="right__lists">
+                            <li class="right__lists-list">
+                                <svg aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                </svg>
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                            <li class="right__lists-list">
+                                <svg aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                </svg>
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                            <li class="right__lists-list">
+                                <svg aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                </svg>
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                        </ul>
+                            <a class="right__btn">Now More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Us -->
+
+        <!-- Start Project -->
+        <div id="portfolio" class="project section">
+            <div class="container">
+                <div class="project__content">
+                    <div class="project__content-headings">    
+                        <h1>our projects</h1>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis 
+                        notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+
+                    <ul class="nav nav-tabs project__content-toolbar" id="myTab" role="tablist">
+                        <li class="nav-item toolbar__item">
+                            <a class="nav-link toolbar__item-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">
+                                all
+                            </a>
+                        </li>
+                        <li class="nav-item toolbar__item">
+                            <a class="nav-link toolbar__item-link" id="websites-tab" data-toggle="tab" href="#websites" role="tab" aria-controls="websites" aria-selected="false">
+                                websites
+                            </a>
+                        </li>
+                        <li class="nav-item toolbar__item">
+                            <a class="nav-link toolbar__item-link" id="designs-tab" data-toggle="tab" href="#designs" role="tab" aria-controls="designs" aria-selected="false">
+                                designs
+                            </a>
+                        </li>
+                        <li class="nav-item toolbar__item">
+                            <a class="nav-link toolbar__item-link" id="social-tab" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false">
+                                social media
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content project__content-items" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio1.jpg" alt="portfolio1">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>web project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio2.jpg" alt="portfolio2">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>designing project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio3.jpg" alt="portfolio3">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>social project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio4.jpg" alt="portfolio4">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>web project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio5.jpg" alt="portfolio5">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>designing project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio6.jpg" alt="portfolio3">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>social project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="websites" role="tabpanel" aria-labelledby="websites-tab">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio1.jpg" alt="portfolio1">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>web project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio4.jpg" alt="portfolio4">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>web project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="designs" role="tabpanel" aria-labelledby="designs-tab">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio2.jpg" alt="portfolio2">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>designing project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio5.jpg" alt="portfolio5">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>designing project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio3.jpg" alt="portfolio3">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>social project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="items__item">
+                                        <div class="items__item-image">
+                                            <img src="assets/images/portfolio6.jpg" alt="portfolio3">
+                                        </div>
+
+                                        <div class="items__item-content">
+                                            <h3>social project</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__content-btn">
+                        <a class="btn__more">see more projects</a>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <!-- End Project -->
+
+        <!-- Start Testimonial -->
+        <div id="testimonial" class="testimonial section">
+            <div class="container">
+                <div class="row testimonial__content">
+                    <div class="col-md-6 col-lg-3 testimonial__content-item">
+                        <div class="item__client">
+                            <svg class="svg-inline--fa fa-users fa-w-20 text_green counter_icon" aria-hidden="true" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path>
+                            </svg>
+
+                            <h2 class="counter">200</h2>
+                            <h3>happy clients</h3>
+                        </div>
+
+                        <div class="item__project">
+                            <svg class="svg-inline--fa fa-project-diagram fa-w-20 text_green counter_icon" aria-hidden="true" data-prefix="fas" data-icon="project-diagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z"></path>
+                            </svg>
+
+                            <h2 class="counter">300</h2>
+                            <h3>projects</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 testimonial__content-item">
+                        <div class="item__event">
+                            <svg class="svg-inline--fa fa-calendar-alt fa-w-14 text_green counter_icon" aria-hidden="true" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z"></path>
+                            </svg>
+
+                            <h2 class="counter">20</h2>
+                            <h3>events</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 testimonial__content-item">
+                        <div class="item__title">
+                            <h2>what clients say</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod 
+                                tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor 
+                                sit amet.Veniam quis notru exercit.</p>
+                        </div>
+
+                        <div class="owl-carousel owl-theme item__slide">
+                            <div class="item__slide-item">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
+                                    tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
+                                    sit amet.Veniam quis notru exercit.
+                                </p>
+
+                                <div class="item__info">
+                                    <img src="assets/images/client1.jpg" alt="avatar">
+                                    <h3>Nagy el.saied</h3>
+                                </div>
+                            </div>
+                            <div class="item__slide-item">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
+                                    tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
+                                    sit amet.Veniam quis notru exercit.
+                                </p>
+
+                                <div class="item__info">
+                                    <img src="assets/images/client2.jpg" alt="avatar">
+                                    <h3>perla mohammed</h3>
+                                </div>
+                            </div>
+                            <div class="item__slide-item">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
+                                    tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
+                                    sit amet.Veniam quis notru exercit.
+                                </p>
+
+                                <div class="item__info">
+                                    <img src="assets/images/client3.jpg" alt="avatar">
+                                    <h3>ali essa</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonial -->
+
+        <!-- Start Team -->
+        <div id="team" class="team section">
+            <div class="container">
+                <div class="team__content">
+                    <div class="team__content-headings">
+                        <h1>our lovely team</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit 
+                            ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+
+                    <div class="team__content-slide">
+                        <div class="owl-carousel owl-theme slide__content">
+                            <div class="slide__content-item">
+                                <div class="item__pic">
+                                    <img src="assets/images/client1.jpg" alt="avatar">
+
+                                    <ul class="item__pic-social">
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="item__info">
+                                    <h3>nagy noor</h3>
+                                    <span>web developer</span>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-item">
+                                <div class="item__pic">
+                                    <img src="assets/images/client2.jpg" alt="avatar">
+
+                                    <ul class="item__pic-social">
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="item__info">
+                                    <h3>perrla mohammed</h3>
+                                    <span>web designer</span>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-item">
+                                <div class="item__pic">
+                                    <img src="assets/images/client3.jpg" alt="avatar">
+
+                                    <ul class="item__pic-social">
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="item__info">
+                                    <h3>tamer ahmed</h3>
+                                    <span>social media</span>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-item">
+                                <div class="item__pic">
+                                    <img src="assets/images/client4.jpg" alt="avatar">
+
+                                    <ul class="item__pic-social">
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="item__info">
+                                    <h3>williamson</h3>
+                                    <span>ui/ux designer</span>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-item">
+                                <div class="item__pic">
+                                    <img src="assets/images/client2.jpg" alt="avatar">
+
+                                    <ul class="item__pic-social">
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__item-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="item__info">
+                                    <h3>perrla mohammed</h3>
+                                    <span>web designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Team -->
+
+        <!-- Start Pricing -->
+        <div id="pricing" class="pricing section">
+            <div class="container">
+                <div class="pricing__content">
+                    <div class="pricing__content-headings">
+                        <h1>pricing</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit 
+                            ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+
+                    <div class="row pricing__content-items">
+                        <div class="col-md-4 col-sm-12 items__item">
+                            <div class="items__item-table wow animate__animated animate__fadeInLeft animate__slow">
+                                <div class="table__header">
+                                    <h2>basic</h2>
+                                    <h3>20$ /month</h3>
+                                </div>
+
+                                <div class="table__content">
+                                    <ul class="table__content-lists">
+                                        <li class="lists__item">50GB disk space</li>
+                                        <li class="lists__item">50 email accounts</li>
+                                        <li class="lists__item disable">50GB bandwidth</li>
+                                        <li class="lists__item disable">10 subdomains</li>
+                                        <li class="lists__item disable">15domains</li>
+                                    </ul>
+
+                                    <a class="table__content-btn">submit now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 items__item">
+                            <div class="items__item-table items__item-advanced">
+                                <div class="table__header color-blue">
+                                    <h2>advanced</h2>
+                                    <h3>25$ /month</h3>
+                                </div>
+
+                                <div class="table__content">
+                                    <ul class="table__content-lists">
+                                        <li class="lists__item">50GB disk space</li>
+                                        <li class="lists__item">50 email accounts</li>
+                                        <li class="lists__item">50GB bandwidth</li>
+                                        <li class="lists__item">10 subdomains</li>
+                                        <li class="lists__item disable">15domains</li>
+                                    </ul>
+
+                                    <a class="table__content-btn gra-btn-bg">submit now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 items__item">
+                            <div class="items__item-table wow animate__animated animate__fadeInRight animate__slow">
+                                <div class="table__header">
+                                    <h2>expert</h2>
+                                    <h3>20$ /month</h3>
+                                </div>
+
+                                <div class="table__content">
+                                    <ul class="table__content-lists">
+                                        <li class="lists__item">50GB disk space</li>
+                                        <li class="lists__item">50 email accounts</li>
+                                        <li class="lists__item">50GB bandwidth</li>
+                                        <li class="lists__item">10 subdomains</li>
+                                        <li class="lists__item">15domains</li>
+                                    </ul>
+
+                                    <a class="table__content-btn">submit now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pricing -->
+
+        <!-- Start Blogs -->
+        <div id="news" class="blogs section">
+            <div class="container">
+                <div class="blogs__content">
+                    <div class="blogs__content-headings">
+                        <h1>latest news</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit 
+                            ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+
+                    <div class="row blogs__content-items">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="items__item">
+                                <a href="single-blog.html">
+                                    <div class="items__item-image">
+                                        <img src="assets/images/portfolio1.jpg" alt="image">
+                                    </div>
+
+                                    <div class="items__item-content">
+                                        <div>
+                                            <h3>how to be effective in working remotely</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed 
+                                            eiusmod tempor enim minim veniam quis notru</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-4">
+                            <div class="items__item mb-rem">
+                                <a href="single-blog.html">
+                                    <div class="items__item-image">
+                                        <img src="assets/images/portfolio2.jpg" alt="image">
+                                    </div>
+
+                                    <div class="items__item-content">
+                                        <div>
+                                            <h3>personal finance planning</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                                elitsed eiusmod</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="items__item">
+                                <a href="single-blog.html">
+                                    <div class="items__item-image">
+                                        <img src="assets/images/portfolio3.jpg" alt="image">
+                                    </div>
+
+                                    <div class="items__item-content">
+                                        <div>
+                                            <h3>best ui / ux Designs</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                                elitsed eiusmod</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blogs__content-btn">
+                        <a class="btn__show">
+                            show more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blogs -->
+
+        <!-- Start Contact -->
+        <div id="contact" class="contact section">
+            <div class="container">
+                <div class="contact__content">
+                    <div class="contact__content-headings">
+                        <h1>get in touch</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <div class="row contact__content-items wow animate__animated animate__fadeInUp animate__slow">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="items__list">
+                                <div class="items__list-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+
+                                    <div class="item__text">
+                                        <p class="item__text-title">location</p>
+                                        <p>10,Park Street,London</p>
+                                    </div>
+                                </div>
+                                <div class="items__list-item">
+                                    <i class="fas fa-mobile-alt"></i>
+
+                                    <div class="item__text">
+                                        <p class="item__text-title">phone</p>
+                                        <p>(+1) 517 397 7100</p>
+                                    </div>
+                                </div>
+                                <div class="items__list-item">
+                                    <i class="far fa-envelope"></i>
+
+                                    <div class="item__text">
+                                        <p class="item__text-title">email</p>
+                                        <p>ABCDEFG@GMAIL.COM</p>
+                                    </div>
+                                </div>
+                                <div class="items__list-item">
+                                    <i class="far fa-clock"></i>
+
+                                    <div class="item__text">
+                                        <p class="item__text-title">working ours</p>
+                                        <p>Mon-Fri 9.00AM to 5.00PM.</p>
+                                    </div>
+                                </div>
+                                <a class="items__list-btn">send message</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6 items__map">
+                            <div class="items__map-item">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421701.2454303203!2d-90.21538947620296!3d34.33670749678344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88801b5b94e09a8b%3A0xabd6bc8b4f8f7ebb!2sUnited+States+Postal+Service!5e0!3m2!1sen!2seg!4v1536167131135" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+        
+        <!-- Start Popup -->
+        <div id="popup" class="popup wow animate__animated animate__fadeInUp">
+            <div class="popup__content">
+                <form action="#" class="popup__content-form">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" placeholder="full name">
+                        </div>
+                        <div class="col">
+                            <input type="email" placeholder="email">
+                        </div>
+                    </div>
+
+                    <input type="text" placeholder="phone">
+                    <textarea name="message" id="message" placeholder="message"></textarea>
+
+                    <a class="form__submit">submit</a>
+                 </form>
+            </div>
+        </div>
+        <!-- End Popup -->
+
+        <!-- Start Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p>ZAGENCY © 2016 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Counter Up JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> 
+    <!-- Fancy Box JS -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
